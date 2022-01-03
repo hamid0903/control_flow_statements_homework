@@ -13,4 +13,25 @@ def main(a,b,c):
     Returns:
         string: string with the result
     """
-    return
+    m=0
+    x=0
+    if a>0:
+        m+=1
+    if a<0:
+        x+=1
+    if b>0:
+        m+=1
+    if b<0:
+        x+=1
+    if c>0:
+        m+=1
+    if c<0:
+        x+=1
+    if x>m:
+        print("There are a lot of negative numbers")
+    else:
+        print("There are a lot of positive numbers")
+    return m,x
+    
+x=main(5,-10,-5)
+print(x)
